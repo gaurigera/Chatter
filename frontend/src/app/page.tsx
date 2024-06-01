@@ -1,9 +1,17 @@
-import Container from "@/components/Container";
+import ChatContainer from "@/components/ChatContainer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between min-w-full lg:pl-60 lg:pr-60 bg-black">
-      <Container />
-    </main>
+    <>
+      <div className="h-screen z-0 flex dark:bg-darkGray p-2">
+        <main className="flex-col flex-1">
+          <div className="h-full flex flex-1 gap-2">
+            <div className="border-2 rounded-lg w-1/4"></div>
+            <ChatContainer />
+            <div className="flex-1 border-2 rounded-lg"></div>
+          </div>
+        </main>
+      </div>
+    </>
   );
 }
