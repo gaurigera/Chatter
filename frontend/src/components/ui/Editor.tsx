@@ -33,7 +33,7 @@ export function Editor({
   return (
     <form
       className={
-        "w-full max-w-xl mx-auto border-2 bg-white dark:bg-zinc-800 rounded-2xl overflow-hidden p-2 pl-5 flex items-end h-auto"
+        "w-full max-w-xl mx-auto border-2 bg-white dark:bg-zinc-800 rounded-2xl overflow-hidden p-2 pl-5 flex items-end h-auto dark:border-white/40"
       }
       onSubmit={handleSubmit}
     >
@@ -57,7 +57,7 @@ export function Editor({
         <div className="">
           <button
             type="submit"
-            className="z-50 h-8 w-8 rounded-full disabled:bg-gray-100 bg-black dark:bg-zinc-900 dark:disabled:bg-zinc-800 transition duration-200 flex items-center justify-center"
+            className="z-50 h-8 w-8 rounded-full disabled:bg-gray-100 bg-black dark:bg-zinc-500 dark:disabled:bg-zinc-800 transition duration-200 flex items-center justify-center"
           >
             <motion.svg
               xmlns="http://www.w3.org/2000/svg"

@@ -22,7 +22,7 @@ export default function Home() {
                 <ChatContainer />
               </ResizablePanel>
               <ResizableHandle />
-              <ResizablePanel defaultSize={35} minSize={25}>
+              <ResizablePanel defaultSize={37} minSize={25}>
                 <DetailContainer />
               </ResizablePanel>
             </div>

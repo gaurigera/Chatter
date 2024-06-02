@@ -10,7 +10,7 @@ function Incoming() {
             <AvatarFallback>DG</AvatarFallback>
           </Avatar>
         </div>
-        <div className="flex flex-col border-2 rounded-lg p-4 max-w-80 text-sm gap-1">
+        <div className="flex flex-col border-2 rounded-lg p-4 max-w-80 text-sm gap-1 dark:border-white/40">
           <div className="flex-1">
             <span className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad

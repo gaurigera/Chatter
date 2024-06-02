@@ -4,7 +4,7 @@ import Outgoing from "./ui/outgoing";
 
 function ChatContainer() {
   return (
-    <div className="h-full dark:bg-darkGray p-3 border-2 rounded-lg">
+    <div className="h-full p-3 border-2 rounded-lg dark:border-white/40">
       <div className="flex flex-col h-full overflow-hidden">
         <div className="flex-1 scrollbar-thin scrollbar-thumb-neutral-100 scrollbar-track-white overflow-y-scroll">
           <Incoming />
