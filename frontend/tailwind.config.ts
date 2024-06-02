@@ -1,16 +1,16 @@
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
-  mode: 'jit',
+  mode: "jit",
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -23,11 +23,11 @@ const config = {
     },
     extend: {
       colors: {
-        'mediumGray' : '#2f3142',
-        'darkGray': '#1d1d2a'
-      }, 
+        mediumGray: "#2f3142",
+        darkGray: "#1d1d2a",
+      },
       keyframes: {
-aurora: {
+        aurora: {
           from: {
             backgroundPosition: "50% 50%, 50% 50%",
           },
@@ -51,17 +51,22 @@ aurora: {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), addVariablesForColors],
-} satisfies Config
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@tailwindcss/typography"),
+    require("tailwind-scrollbar"),
+    addVariablesForColors,
+  ],
+} satisfies Config;
 
-export default config
+export default config;
 
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });

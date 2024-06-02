@@ -1,6 +1,6 @@
 "use client";
 
-import { VanishInput } from "./vanish-input";
+import { Editor } from "./Editor";
 
 export function Input() {
     
@@ -13,7 +13,7 @@ export function Input() {
   };
   return (
     <div className="flex flex-col justify-center items-center px-4">
-      <VanishInput
+      <Editor
         placeholder={"Type your message here.."}
         onChange={handleChange}
         onSubmit={onSubmit}
