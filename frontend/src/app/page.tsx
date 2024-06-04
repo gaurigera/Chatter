@@ -1,5 +1,5 @@
 import ChatContainer from "@/components/ChatContainer";
-import RoomContainer from "@/components/RoomContainer";
+import RoomContainer from "@/components/room/RoomContainer";
 import DetailContainer from "@/components/DetailContainer";
 import {
   ResizableHandle,
@@ -14,7 +14,7 @@ export default function Home() {
         <ResizablePanelGroup direction="horizontal">
           <main className="flex-1 overflow-hidden">
             <div className="flex h-full gap-2 overflow-hidden">
-              <ResizablePanel defaultSize={20} minSize={10}>
+              <ResizablePanel defaultSize={20} minSize={15}>
                 <RoomContainer />
               </ResizablePanel>
               <ResizableHandle />

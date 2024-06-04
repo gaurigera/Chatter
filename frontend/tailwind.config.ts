@@ -23,8 +23,9 @@ const config = {
     },
     extend: {
       colors: {
-        mediumGray: "#2f3142",
-        darkGray: "#1d1d2a",
+        lightGray: "#1a1c0f",
+        mediumGray: "#1c1e1f",
+        darkGray: "#080809",
       },
       keyframes: {
         aurora: {

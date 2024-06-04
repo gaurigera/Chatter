@@ -37,7 +37,7 @@ export function Editor({
       }
       onSubmit={handleSubmit}
     >
-      <div className="flex-1">
+      <div className="flex-1 items-center">
         <MDXEditor
           markdown=""
           plugins={[
@@ -49,7 +49,7 @@ export function Editor({
           ]}
           ref={mdxRef}
           autoFocus
-          contentEditableClassName="overscroll-contain outline-none w-full text-sm sm:text-base z-50 border-none dark:text-white text-black h-auto prose prose-slate prose-a:text-blue-500"
+          contentEditableClassName="overscroll-contain outline-none w-full text-sm sm:text-base z-50 border-none text-black dark:text-white h-auto prose prose-slate prose-a:text-blue-500 prose-strong:dark:text-white"
         />
       </div>
 
