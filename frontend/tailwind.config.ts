@@ -4,7 +4,19 @@ const {
 import type { Config } from "tailwindcss";
 
 const config = {
-  mode: "jit",
+  // mode: "jit",
+  purge: {
+    enabled: true, // Enable PurgeCSS
+    content: [
+      "./pages/**/*.{ts,tsx}",
+      "./components/**/*.{ts,tsx}",
+      "./app/**/*.{ts,tsx}",
+      "./src/**/*.{ts,tsx}",
+    ],
+    safelist: [
+      /* Optional: List classes to always keep */
+    ],
+  },
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",

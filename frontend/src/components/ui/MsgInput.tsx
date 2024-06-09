@@ -2,7 +2,7 @@
 
 import { Editor } from "./Editor";
 
-export function Input() {
+export function MsgInput() {
     
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log(e.target.value);

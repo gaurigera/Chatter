@@ -1,4 +1,4 @@
-import { Input } from "./ui/Input";
+import { MsgInput } from "./ui/MsgInput";
 import Incoming from "./ui/incoming";
 import Outgoing from "./ui/outgoing";
 
@@ -13,7 +13,7 @@ function ChatContainer() {
           <Outgoing />
         </div>
         <div className="pt-3"> 
-          <Input />
+          <MsgInput />
         </div>
       </div>
     </div>
