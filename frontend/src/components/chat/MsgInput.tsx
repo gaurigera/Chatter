@@ -1,6 +1,6 @@
 "use client";
 
-import { Editor } from "./Editor";
+import { Editor } from "../ui/Editor";
 
 export function MsgInput() {
     

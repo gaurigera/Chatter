@@ -1,4 +1,4 @@
-import ChatContainer from "@/components/ChatContainer";
+import ChatContainer from "@/components/chat/ChatContainer";
 import RoomContainer from "@/components/room/RoomContainer";
 import DetailContainer from "@/components/DetailContainer";
 import {
