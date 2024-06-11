@@ -13,18 +13,18 @@ const messageModel = new Schema(
             required: true,
             ref: "User", // Reference the User model
         },
-        content: {
+        data: {
             type: String,
             required: true,
         },
-        timestamp: {
+        sentAt: {
             type: Date,
+            immutable: true,
             default: Date.now, // Use the current date and time as the default
         },
         seenBy: [
             {
                 type: mongoose.Schema.Types.ObjectId,
-                required: true,
                 ref: "User", // Reference the User model
             },
         ],
