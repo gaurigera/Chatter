@@ -1,6 +1,6 @@
 "use client";
 
-import { Editor } from "../ui/Editor";
+import { Editor } from "@/components/chat/input/Editor";
 
 export function MsgInput() {
     

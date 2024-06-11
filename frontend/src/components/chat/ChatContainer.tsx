@@ -1,7 +1,7 @@
 import { ChatRoomNav } from "./ChatRoomNav";
-import { MsgInput } from "./MsgInput";
-import Incoming from "./incoming";
-import Outgoing from "./outgoing";
+import { MsgInput } from "./input/MsgInput";
+import Incoming from "./incoming/incoming";
+import Outgoing from "./outgoing/outgoing";
 
 function ChatContainer() {
   return (
@@ -10,7 +10,7 @@ function ChatContainer() {
         <div>
           <ChatRoomNav />
         </div>
-        <div className="flex-1 scrollComp">
+        <div className="flex-1 scrollComp dark:bg-lightGray">
           <Incoming />
           <Outgoing />
           <Incoming />

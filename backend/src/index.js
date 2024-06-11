@@ -11,16 +11,12 @@ app.get("/", (req, res) => {
     res.send("Hello World!");
 });
 
-io.on("connection", (socket) => {
-    // get the user inside the room
-    console.log("a user connected");
-});
-
 httpServer.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
 
-io.on("disconnect", (socket) => {
-    // remove the user from the room
-    console.log("user disconnected");
+httpServer.on("listening", () => {
+    import("./controllers/socket/connection.js");
 })
+
+export { io };

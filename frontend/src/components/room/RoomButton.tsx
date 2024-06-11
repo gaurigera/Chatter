@@ -20,7 +20,7 @@ function RoomButton() {
           +
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56 p-2">
+      <DropdownMenuContent className="p-2">
         <DropdownMenuGroup className="flex flex-col gap-2">
           <AddRoom />
           <JoinRoom />

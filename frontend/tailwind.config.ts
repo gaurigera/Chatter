@@ -35,7 +35,7 @@ const config = {
     },
     extend: {
       colors: {
-        lightGray: "#1a1c0f",
+        lightGray: "#1a1b1f",
         mediumGray: "#1c1e1f",
         darkGray: "#080809",
       },
