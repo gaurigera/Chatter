@@ -18,7 +18,9 @@ export default function RootLayout({
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-        <head />
+        <head> 
+          <link rel="icon" href="logo-1F4AC.svg" type="image/svg" />
+        </head>
         <body>
           <ThemeProvider
             attribute="class"

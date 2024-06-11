@@ -7,7 +7,7 @@
     @apply h-full p-3 rounded-lg border-2 dark:bg-mediumGray dark:border-0;
   }
   .inner-card {
-    @apply bg-slate-50 dark:bg-darkGray cursor-pointer;
+    @apply bg-slate-50 dark:bg-darkGray;
   }
   .message {
     @apply flex flex-col rounded-lg p-5 w-3/5 text-sm gap-1;
