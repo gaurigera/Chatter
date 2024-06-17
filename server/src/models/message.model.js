@@ -8,7 +8,7 @@ const messageModel = new Schema(
             required: true,
             ref: "Room", // Reference the Room model
         },
-        senderId: {
+        sender: {
             type: mongoose.Schema.Types.ObjectId,
             required: true,
             ref: "User", // Reference the User model
@@ -20,7 +20,7 @@ const messageModel = new Schema(
         sentAt: {
             type: Date,
             immutable: true,
-            default: Date.now, // Use the current date and time as the default
+            default: Date.now, // Use current date as default
         },
         seenBy: [
             {
