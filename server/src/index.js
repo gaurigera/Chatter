@@ -16,7 +16,7 @@ httpServer.listen(port, () => {
 });
 
 httpServer.on("listening", () => {
-    import("./controllers/socket/connection.js");
+    import("./socket/connection.js");
 })
 
 export { io };
