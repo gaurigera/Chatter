@@ -1,4 +1,3 @@
-"use client";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -57,7 +56,7 @@ export function AddRoom() {
         <DialogFooter className="sm:justify-start">
           <DialogClose asChild>
             <Button type="button" variant="secondary">
-              Close
+              Join
             </Button>
           </DialogClose>
         </DialogFooter>
