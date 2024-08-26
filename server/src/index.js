@@ -15,7 +15,7 @@ const io = new Server(httpServer);
 socketHandler(io);
 
 const server = new ApolloServer({
-    typeDefs: `
+  typeDefs: `
         type A {
             id: ID!
         }
@@ -23,8 +23,8 @@ const server = new ApolloServer({
             getA: [A]
         }
     `,
-    resolvers: {},
-    plugins: [ApolloServerPluginDrainHttpServer({ httpServer })],
+  resolvers: {},
+  plugins: [ApolloServerPluginDrainHttpServer({ httpServer })],
 });
 // Ensure we wait for our server to start
 await server.start();

@@ -1,0 +1,28 @@
+{
+  "name": "chatter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A multi-user realtime chat application.",
+  "workspaces": [
+    "server",
+    "client",
+    "api"
+  ],
+  "scripts": {
+    "backend:dev": "cd server && npm run dev",
+    "frontend:dev": "cd client && npm run dev"
+  },
+  "author": "Gauri Gera",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaurigera/Chatter.git"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/gaurigera/Chatter/issues"
+  },
+  "homepage": "https://github.com/gaurigera/Chatter#readme"
+}

@@ -1,8 +1,8 @@
-import { sendMessage } from "./message/send";
-import { typing } from "./message/typing";
-import { createRoom } from "./room/create";
-import { joinRoom } from "./room/join";
-import { leaveRoom } from "./room/leave";
+import { sendMessage } from "./message/send.js";
+import { typing } from "./message/typing.js";
+import { createRoom } from "./room/create.js";
+import { joinRoom } from "./room/join.js";
+import { leaveRoom } from "./room/leave.js";
 
 export default function (io) {
     io.on("connection", async (socket) => {
